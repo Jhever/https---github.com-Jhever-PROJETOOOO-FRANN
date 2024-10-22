@@ -1,0 +1,189 @@
+html, body {
+    margin: 0;
+    line-height: 1.15;
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%; /* Para facilitar cálculo em rem, cada rem tem 1.5 vezes o tamanho da fonte*/
+    overflow-x: hidden;
+    background-color:#afa9a9;
+}
+
+/*global*/
+:root {
+    --primary-color: #FED001;
+    --dark-bg: #333;
+    --dark2-bg: #003464;
+    --light-bg: #f4f4f4;
+    --white: #fafafa;
+}
+
+h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+}
+
+p, a {
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.capaContainer {
+    width: 100%;
+}
+.capaContainer-fixed {
+    position: static;
+    top: 0;
+}
+
+.capaContainer-dark {
+    background-color: var(--dark-bg);
+    color: var(--white);
+}
+.capaContainer-dark2 {
+    background-color: var(--dark2-bg);
+    color: var(--white);
+    padding-bottom: 12rem;
+}
+.capaContainer-light {
+    background-color: var(--light-bg);
+}
+.capaContainer-padded {
+    padding-top: 12rem;
+}
+
+.container {
+    max-width: 127.6rem;
+    margin: auto;
+    margin-bottom: 0%;
+}
+
+
+.section_title {
+    padding: 7rem;
+    text-align: center;
+    margin: 0;
+}
+.section_btn {
+    margin: 7rem 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    color: var(--primary-color);
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: .6rem;
+}
+.header_nav a {
+    padding: .75em 1.15em;/* cada em é 2x o tamanho do tamanho raiz */
+    border: solid 1px;
+    text-decoration: none;
+    background-color: #ccc;
+}
+.header_nav a:hover {
+    background-color: transparent;
+}
+
+.capaContainer-hero {
+    background-image: linear-gradient(transparent, rgb(2, 0, 139));
+}
+
+.heroBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
+
+.hero_title {
+    font-size: 4.8rem;
+    margin-bottom: 4rem;
+}
+
+.cursosContainer {
+    display: flex;
+    gap: 2rem;
+}
+.curso_card {
+    flex: 1 1 30%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.curso_card img {
+    width: 100%;
+}
+.cursos_card_content {
+    padding: 1rem 1.25rem;
+    border-top: transparent;
+}
+
+.escola {
+    display: flex;
+    gap: 7rem;
+    padding-top: 6rem;
+}
+.escola_title {
+    font-size: 3.2rem;
+    margin-top: 2rem;
+}
+.escola p {
+    font-size: 1.8rem;
+}
+
+.contatos_address {
+    text-align: right;
+    font-size: 1.8rem;
+    padding: 3rem 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 4.5rem;
+    background-color: var(--dark-bg);
+    color: white;
+    font-size: small;
+}
+
+@media (max-width: 575px) {
+    div {
+      width: 100%;
+      max-width: 100%; 
+      background-color: transparent;
+    }
+  }
+  
+
+  @media (min-width: 1900px) {
+    div {
+      width: 50%;
+      max-width: 2100px; 
+      background-color: lightblue;
+    }
+  }
